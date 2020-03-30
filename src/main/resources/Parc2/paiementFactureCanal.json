@@ -1,0 +1,47 @@
+{
+  "Libelle": "PAIEMENT FACTURE CANAL PLUS",
+  "colparc": "sender_msisdn",
+  "filters": [
+    {
+      "name"  : "Transaction status filter",
+      "value" : [
+        {
+          "col"     : "transfer_status",
+          "operator": "=",
+          "value"   : ["TS"]
+        }
+      ]
+    },
+    {
+      "name"  : "Transaction_tag filter",
+      "value" : [
+        {
+          "col"     : "transaction_tag",
+          "operator": "=",
+          "value"   : ["PAIEMENT MARCHAND"]
+        }
+      ]
+    },
+    {
+      "name"  : "receiver_designation filter",
+      "value" : [
+        {
+          "col"     : "receiver_designation",
+          "operator": "=",
+          "value"   : ["CANALPLUS"]
+        }
+      ]
+    },
+    {
+      "name": "TRANSFER_SUBTYPE filter",
+      "value": [
+        {
+          "col"     : "transfer_subtype",
+          "operator": "=",
+          "value"   : ["BILLPAY"]
+        }
+      ]
+    }
+  ],
+  "regroupement" : "PAIEMENT FACTURE"
+}

@@ -1,0 +1,47 @@
+{
+  "Libelle": "B2W UBA IN",
+  "colparc": "receiver_msisdn",
+  "filters": [
+    {
+      "name"  : "Transaction status filter",
+      "value" : [
+        {
+          "col"     : "transfer_status",
+          "operator": "=",
+          "value"   : ["TS"]
+        }
+      ]
+    },
+    {
+      "name"  : "Transaction_tag filter",
+      "value" : [
+        {
+          "col"     : "transaction_tag",
+          "operator": "=",
+          "value"   : ["B2W IN"]
+        }
+      ]
+    },
+    {
+      "name": "TRANSFER_SUBTYPE filter",
+      "value": [
+        {
+          "col"     : "transfer_subtype",
+          "operator": "=",
+          "value"   : ["CASHIN"]
+        }
+      ]
+    },
+    {
+      "name": "Sender_grade_name filter",
+      "value": [
+        {
+          "col"     : "sender_grade_name",
+          "operator": "=",
+          "value"   : ["OMBA UBA GRADE"]
+        }
+      ]
+    }
+  ],
+  "regroupement" : "B2W UBA IN"
+}

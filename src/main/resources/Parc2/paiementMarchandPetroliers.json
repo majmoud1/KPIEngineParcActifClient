@@ -1,0 +1,53 @@
+{
+  "Libelle": "PAIEMENT MARCHAND PETROLIERS",
+  "colparc": "sender_msisdn",
+  "filters": [
+    {
+      "name"  : "Transaction status filter",
+      "value" : [
+        {
+          "col"     : "transfer_status",
+          "operator": "=",
+          "value"   : ["TS"]
+        }
+      ]
+    },
+    {
+      "name"  : "Transaction_tag filter",
+      "value" : [
+        {
+          "col"     : "transaction_tag",
+          "operator": "=",
+          "value"   : ["PAIEMENT MARCHAND"]
+        }
+      ]
+    },
+    {
+      "name"  : "receiver_grade_name filter",
+      "value" : [
+        {
+          "col"     : "receiver_grade_name",
+          "operator": "IN",
+          "value"   : [
+            "Total MR RET Fusion GRADE",
+            "EDKMARCHAND MERCHANTS GRADE",
+            "ELTON MR RET FUSION GRADE",
+            "CIEL OIL MR RET FUSION GRADE",
+            "WMS TITANOIL MERCHANT GRADE"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "TRANSFER_SUBTYPE filter",
+      "value": [
+        {
+          "col"     : "transfer_subtype",
+          "operator": "=",
+          "value"   : ["MERCHPAY"]
+        }
+      ]
+    }
+  ],
+  "regroupement" : "PAIEMENT MARCHAND PETROLIERS"
+}

@@ -1,0 +1,47 @@
+{
+  "Libelle": "ACHAT BUNDLE",
+  "colparc": "sender_msisdn",
+  "filters": [
+    {
+      "name": "Transaction status filter",
+      "value": [
+        {
+          "col"     : "transfer_status",
+          "operator": "=",
+          "value"   : ["TS"]
+        }
+      ]
+    },
+    {
+      "name": "Transaction_tag filter",
+      "value": [
+        {
+          "col"     : "transaction_tag",
+          "operator": "=",
+          "value"   : ["PAIEMENT MARCHAND"]
+        }
+      ]
+    },
+    {
+      "name": "receiver_grade_name filter",
+      "value": [
+        {
+          "col"     : "receiver_grade_name",
+          "operator": "=",
+          "value"   : ["ACHAT PASS ILLIMIX MARCHAND GRADE"]
+        }
+      ]
+    },
+    {
+      "name": "TRANSFER_SUBTYPE filter",
+      "value": [
+        {
+          "col"     : "transfer_subtype",
+          "operator": "=",
+          "value"   : ["MERCHPAY"]
+        }
+      ]
+    }
+  ],
+  "regroupement" : "ACHAT PASS ILLIMIX"
+}
